@@ -47,22 +47,22 @@ Authorization: Bearer your_token_here
 
 ---
 
-🧪 Testing with Ngrok
+## 🧪 Testing with Ngrok
 To expose your Laravel server to the internet for Android testing:
 
 Start Laravel local server:
 
-bash
-Copy
-Edit
+```bash
 php artisan serve
+```
 In another terminal, run ngrok (adjust port if needed):
 
-bash
-Copy
-Edit
+```bash
 ngrok http 8000
+```
 Use the provided HTTPS ngrok URL in your Android app's Retrofit base URL
 
-🔗 Related Projects
+---
+
+## 🔗 Related Projects
 📱 Frontend Android Client: [android-post-to-laravel-api](https://github.com/raffyhidayatulloh/android-post-to-laravel-api)
