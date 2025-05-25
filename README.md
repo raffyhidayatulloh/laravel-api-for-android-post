@@ -1,6 +1,6 @@
 # 📡 Laravel API for Android App Communication
 
-This Laravel-based RESTful API serves as the backend for the [android-post-to-laravel-api](https://github.com/your-username/android-post-to-laravel-api) mobile application. It handles **user authentication** and **CRUD operations on blog posts**, enabling seamless communication with an Android client over HTTP using **token-based authentication** via Laravel Sanctum.
+This Laravel-based RESTful API serves as the backend for the [android-post-to-laravel-api](https://github.com/raffyhidayatulloh/android-post-to-laravel-api) mobile application. It handles **user authentication** and **CRUD operations on blog posts**, enabling seamless communication with an Android client over HTTP using **token-based authentication** via Laravel Sanctum.
 
 ---
 
@@ -40,7 +40,6 @@ Authorization: Bearer your_token_here
 
 ## 🧩 Tech Stack
 
-- **Laravel 10**
 - **Laravel Sanctum**
 - **RESTful API Design**
 - **MySQL** (or your preferred database)
@@ -48,21 +47,22 @@ Authorization: Bearer your_token_here
 
 ---
 
-## ⚙️ Sample Route Definition (API Routes)
+🧪 Testing with Ngrok
+To expose your Laravel server to the internet for Android testing:
 
-```php
-use App\Http\Controllers\AuthController;
-use App\Http\Controllers\PostController;
-use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Route;
+Start Laravel local server:
 
-Route::get('/user', function (Request $request) {
-    return $request->user();
-})->middleware('auth:sanctum');
+bash
+Copy
+Edit
+php artisan serve
+In another terminal, run ngrok (adjust port if needed):
 
-Route::apiResource('posts', PostController::class);
+bash
+Copy
+Edit
+ngrok http 8000
+Use the provided HTTPS ngrok URL in your Android app's Retrofit base URL
 
-Route::post('/register', [AuthController::class, 'register']);
-Route::post('/login', [AuthController::class, 'login']);
-Route::post('/logout', [AuthController::class, 'logout'])->middleware('auth:sanctum');
-
+🔗 Related Projects
+📱 Frontend Android Client: [android-post-to-laravel-api](https://github.com/raffyhidayatulloh/android-post-to-laravel-api)
