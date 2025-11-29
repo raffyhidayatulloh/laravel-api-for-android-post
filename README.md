@@ -1,4 +1,4 @@
-# 📡 Laravel API for Android App Communication
+# Posts API
 
 This **Laravel RESTful API** serves as the backend for the [android-post-to-laravel-api](https://github.com/raffyhidayatulloh/android-post-to-laravel-api) app. It provides **user authentication** and **CRUD operations on posts** via **token-based authentication** using Laravel Sanctum.
 
