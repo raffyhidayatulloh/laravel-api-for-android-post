@@ -1,15 +1,15 @@
 # 📡 Laravel API for Android App Communication
 
-This Laravel-based RESTful API serves as the backend for the [android-post-to-laravel-api](https://github.com/raffyhidayatulloh/android-post-to-laravel-api) mobile application. It handles **user authentication** and **CRUD operations on blog posts**, enabling seamless communication with an Android client over HTTP using **token-based authentication** via Laravel Sanctum.
+This **Laravel RESTful API** serves as the backend for the [android-post-to-laravel-api](https://github.com/raffyhidayatulloh/android-post-to-laravel-api) app. It provides **user authentication** and **CRUD operations on posts** via **token-based authentication** using Laravel Sanctum.
 
 ---
 
 ## 🚀 Features
 
-- 🔐 **User Authentication** with Registration, Login, and Logout
-- 📝 **Create, Read, Update, Delete (CRUD)** operations for posts
-- 🧪 Secured endpoints using **Sanctum** token authentication
-- 🤖 Tested with a real Android app using Retrofit + Ngrok tunnel
+- 🔐 User Registration, Login, Logout  
+- 📝 CRUD operations for posts  
+- 🧪 Secured with **Sanctum tokens**  
+- 🤖 Tested with Android app via Retrofit + Ngrok
 
 ---
 
@@ -40,14 +40,15 @@ Authorization: Bearer your_token_here
 
 ## 🧩 Tech Stack
 
-- **Laravel Sanctum**
-- **RESTful API Design**
-- **MySQL** (or your preferred database)
-- **Ngrok** for tunneling and mobile testing
+- Laravel & Laravel Sanctum  
+- RESTful API Design  
+- MySQL (or preferred DB)  
+- Ngrok for mobile testing 
 
 ---
 
-## 🧪 Testing with Ngrok
+## 🧪 Quick Testing with Ngrok
+
 To expose your Laravel server to the internet for Android testing:
 
 Start Laravel local server:
@@ -65,6 +66,7 @@ Use the provided HTTPS ngrok URL in your Android app's Retrofit base URL
 ---
 
 ## 🔗 Related Projects
-📱 Frontend Android Client: [android-post-to-laravel-api](https://github.com/raffyhidayatulloh/android-post-to-laravel-api)
 
-🛠️ Backend API: [laravel-api-for-android-post](https://github.com/raffyhidayatulloh/laravel-api-for-android-post)
+- 📱 Android Client: [android-post-to-laravel-api](https://github.com/raffyhidayatulloh/android-post-to-laravel-api)
+
+- 🛠️ Backend API: [laravel-api-for-android-post](https://github.com/raffyhidayatulloh/laravel-api-for-android-post)
